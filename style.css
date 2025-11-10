@@ -22,6 +22,7 @@ body {
     background-color: var(--light-bg);
 }
 
+/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -80,10 +81,10 @@ nav {
     border-bottom: 2px solid var(--secondary-color);
 }
 
-/* Grid Layout */
+/* Grid */
 .grid-container {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "featured"
         "main"
         "sidebar"
@@ -92,7 +93,7 @@ nav {
     margin-top: 20px;
 }
 
-/* Featured Section */
+/* Featured */
 .featured {
     grid-area: featured;
     background-color: var(--white);
@@ -116,6 +117,7 @@ nav {
 
 .featured-image img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: var(--shadow);
 }
@@ -134,7 +136,7 @@ nav {
     margin-bottom: 15px;
 }
 
-/* Main Content */
+/* Main */
 .main {
     grid-area: main;
     background-color: var(--white);
@@ -142,33 +144,6 @@ nav {
     overflow: hidden;
     box-shadow: var(--shadow);
     padding: 20px;
-}
-
-.main h2, .main h3, .main h4 {
-    background-color: var(--primary-color);
-    color: var(--white);
-    text-align: center;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.main img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-}
-
-.main ul, .main ol {
-    margin: 15px 0;
-    padding-left: 30px;
-}
-
-.main li {
-    margin-bottom: 8px;
 }
 
 /* Sidebar */
@@ -181,32 +156,6 @@ nav {
     padding: 20px;
 }
 
-.sidebar h3 {
-    background-color: var(--primary-color);
-    color: var(--white);
-    text-align: center;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.ad-banner {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.ad-banner img {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-}
-
-.ad-text {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #666;
-}
-
 /* Footer */
 footer {
     grid-area: footer;
@@ -217,7 +166,7 @@ footer {
     text-align: center;
 }
 
-/* Buttons */
+/* Button */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -238,21 +187,11 @@ footer {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* Responsive Design */
-@media (min-width: 576px) {
-    .grid-container {
-        grid-template-areas: 
-            "featured"
-            "main"
-            "sidebar"
-            "footer";
-    }
-}
-
+/* Responsive */
 @media (min-width: 992px) {
     .grid-container {
         grid-template-columns: 2fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "featured featured"
             "main sidebar"
             "footer footer";
