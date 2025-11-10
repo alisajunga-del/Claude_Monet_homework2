@@ -219,6 +219,12 @@ footer {
         font-size: 1.1rem;
         margin: 10px 0;
     }
+
+    /* Адаптивный контейнер для очень маленьких экранов */
+    .container {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
 }
 
 /* Small to medium devices */
@@ -226,6 +232,11 @@ footer {
     .btn {
         font-size: 1rem;
         padding: 0.8rem 1.2rem;
+    }
+
+    /* Контейнер: 2 колонки при средних экранах */
+    .container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -237,6 +248,11 @@ footer {
             "featured featured"
             "main sidebar"
             "footer footer";
+    }
+
+    /* Контейнер: 3 колонки, если нужно (опционально) */
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
 
@@ -261,8 +277,3 @@ footer {
         display: block;
     }
 }
-
-
-
-
-
