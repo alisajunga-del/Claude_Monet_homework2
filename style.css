@@ -160,7 +160,7 @@ nav {
 footer {
     grid-area: footer;
     background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--primary-color);
     padding: 20px;
     border-radius: 8px;
     text-align: center;
